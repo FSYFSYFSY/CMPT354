@@ -1,0 +1,130 @@
+INSERT INTO `contain_restaurant` (`rid`, `did`) VALUES
+('00001', '00001'),
+('00002', '00002'),
+('00003', '00003'),
+('00004', '00004'),
+('00005', '00005');
+
+INSERT INTO `customer` (`cid`, `name`) VALUES
+('00001', 'Akash'),
+('00002', 'Aja'),
+('00003', 'Joffre'),
+('00004', 'Ned'),
+('00005', 'Kevin');
+
+INSERT INTO `depart_info` (`location`, `did`) VALUES
+('east_ground', '00002'),
+('south_upper', '00005'),
+('west_upper', '00001'),
+('west_upper', '00003'),
+('west_upper', '00004');
+
+INSERT INTO `goods` (`gid`, `price`, `type`, `name`, `sid`) VALUES
+('00001', 12.5, 'clothes', 'T-shirt', '00002'),
+('00003', 25, 'shoes', 'Air Jordan', '00002'),
+('00002', 20.5, 'shoes', 'leather sh', '00003'),
+('00004', 24.5, 'clothes', 'shorts', '00004'),
+('00005', 12.5, 'shoes', 'ultra boos', '00004');
+
+INSERT INTO `manager` (`manager_id`, `name`, `field`) VALUES
+('00001', 'Tom', 'East upper'),
+('00002', 'Mike', 'South uppe'),
+('00003', 'Jerry', 'West upper'),
+('00004', 'Kevin', 'North uppe'),
+('00005', 'John', 'West groun');
+
+INSERT INTO `manager_loc` (`location`, `manager_id`) VALUES
+('west_upper', '00001'),
+('east_ground', '00002'),
+('north_ground', '00003'),
+('west_ground', '00004'),
+('south_upper', '00005');
+
+INSERT INTO `normal_staff` (`normal_staff_id`, `sid`, `name`) VALUES
+('00001', '00002', 'Akaha'),
+('00002', '00003', 'Josh'),
+('00003', '00001', 'Donald'),
+('00004', '00004', 'Maria'),
+('00005', '00003', 'Mullar');
+
+INSERT INTO `principal` (`psid`, `name`, `sid`) VALUES
+('00001', 'Joseph', '00002'),
+('00002', 'Takamura', '00003'),
+('00003', 'Ashina', '00001'),
+('00004', 'Yulong', '00001'),
+('00005', 'Zihang', '00003');
+
+INSERT INTO `restaurant` (`rid`, `location`, `review`) VALUES
+('00001', 'west upper', 'good'),
+('00002', 'north ground', 'normal'),
+('00003', 'south upper', 'good'),
+('00004', 'north ground', 'bad'),
+('00005', 'west ground', 'normal');
+
+INSERT INTO `restaurant_staff` (`rsid`, `rid`, `name`) VALUES
+('00001', '00002', 'Mike'),
+('00002', '00002', 'John'),
+('00003', '00005', 'Eric'),
+('00004', '00004', 'Tom'),
+('00005', '00003', 'Bobby');
+
+INSERT INTO `sales_manager` (`smid`, `name`) VALUES
+('00001', 'Aya'),
+('00002', 'Ken'),
+('00003', 'Elizabeth'),
+('00004', 'hang'),
+('00005', 'Dan');
+
+INSERT INTO `staff` (`staff_id`, `name`) VALUES
+('00001', 'Tom'),
+('00002', 'Mike'),
+('00003', 'Jerry'),
+('00004', 'Kevin'),
+('00005', 'John'),
+('00006', 'Lorance'),
+('00007', 'Johnason'),
+('00008', 'Jennifer'),
+('00009', 'Aje'),
+('00010', 'Keren');
+
+INSERT INTO `store` (`sid`, `name`, `did`) VALUES
+('00001', 'GUCCI', '00002'),
+('00002', 'Jack&Jones', '00002'),
+('00003', 'NIKE', '00005'),
+('00004', 'Addidas', '00001'),
+('00005', 'Coach', '00003');
+
+INSERT INTO `store_staff` (`store_staff_id`, `name`) VALUES
+('00001', 'Han'),
+('00002', 'Jay'),
+('00003', 'Jane'),
+('00004', 'Tina'),
+('00005', 'Bora');
+
+INSERT INTO `transaction_info` (`sid`, `gid`, `cid`, `date`, `smid`) VALUES
+('00002', '00001', '00003', 'June 27 2022', '00001'),
+('00002', '00003', '00003', 'July 1 2022', '00002'),
+('00003', '00002', '00001', ' May 23 2022', '00001'),
+('00004', '00004', '00002', ' March 21 2022', '00003'),
+('00004', '00005', '00002', 'April 20 2022', '00005');
+
+INSERT INTO `transaction_shipping_info` (`shipping_addr`, `cid`) VALUES
+('Burnaby Yale St. 00001', '00001'),
+('Burnaby Yale St. 00002', '00002'),
+('Burnaby Yale St. 00003', '00003'),
+('Burnaby Yale St. 00004', '00004'),
+('Burnaby Yale St. 00005', '00005');
+
+INSERT INTO `woker_info` (`worker_id`, `job`, `name`) VALUES
+('00001', 'security', 'Adolf'),
+('00002', 'security', 'Li'),
+('00003', 'security', 'Hans'),
+('00004', 'security', 'John'),
+('00005', 'security', 'Acton');
+
+INSERT INTO `worker_job` (`job`, `dept`) VALUES
+('cleaner', '00001'),
+('accounting', '00002'),
+('security', '00003'),
+('cashier', '00004'),
+('monitor', '00005');
