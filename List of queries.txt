@@ -1,0 +1,18 @@
+In thes database server, we supported:
+
+Update Operation,
+
+Delete Operation,
+
+Insert Operation,
+
+Selection,
+
+Projection,
+
+Join Query,
+
+Aggregation query,
+
+Nested Aggregation with group-by.
+
