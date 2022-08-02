@@ -1,0 +1,11 @@
+The goal of our project is to implement a "Mall Management System" database that contains a series of elements owned by a regular mall, such as information about employees, stores, jobs, merchandise, restaurants, etc., each with its own independent attributes and relationships. We are using Participation Constraints, Weak Entity, ISA to design element relationships. These Relationships are clearly displayed by SQL in the app we design. And we used Join, aggregation, and division to strengthen the connection between the tables to achieve some of the basic functions that project users need. Our project is supported by SQL functions such as selection, Projection, Update, delete, and Insert to modify and display our database, and also provides a web GUI to facilitate not hard-core users.
+
+
+
+
+
+
+
+
+
+

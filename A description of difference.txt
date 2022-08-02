@@ -1,0 +1,4 @@
+In the beginning, we tried to give each element multiple corresponding relationships to represent an action, such as selling and buying and also used the incorrect relationship-relation. In later improvements, we fixed this error to aggregation, removed most of the redundant relationships, and merged them together to form a new rest set. Then use aggregation to manipulate them. In a later modification, we fixed some violations of NF1, NF2, NF3, and BCNF, for example, there is a non-Key dependence (2NF) in a reaction, and then all elements are completely dependent on the super key(4NF). 
+
+Finally, we are planning to use html for front-end and mysql for back-end. But fianlly we choose
+postgres instead of mysql. 
